@@ -40,10 +40,10 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl md:text-3xl">Recipe Calories</a>
+          <a className="btn btn-ghost text-base md:text-2xl lg:text-3xl">Recipe Calories</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-base font-normal text-[#150B2BB3]">
+          <ul className="menu menu-horizontal  text-base font-normal text-[#150B2BB3]">
             <li>
               <a>Home</a>
             </li>
@@ -70,13 +70,14 @@ const Navbar = () => {
                 className="input input-xs w-full max-w-xs outline-none bg-transparent"
               />
             </div>
-            <div className="bg-[#0BE58A] text-[#150B2B] rounded-full flex justify-center items-center p-1 h-auto">
+            <div className="bg-[#0BE58A] hidden  text-[#150B2B] rounded-full md:flex justify-center items-center p-1 h-auto">
             <img src={navbarIcon} alt="navbar_icon" />
             </div>
           </div>
         </div>
       </div>
-      <div className="flex w-[60%] mx-auto md:hidden items-center bg-[#150B2B0D] border px-2 py-1 rounded-xl">
+      <div className="flex  md:hidden justify-center">
+      <div className="flex mx-auto items-center w-[60%] bg-[#150B2B0D] border px-2 py-1 rounded-xl">
         <p>
           <IoIosSearch />
         </p>
@@ -85,6 +86,10 @@ const Navbar = () => {
           placeholder="Search"
           className="input input-xs w-full max-w-xs outline-none bg-transparent"
         />
+      </div>
+      <div className="bg-[#0BE58A] text-[#150B2B] rounded-full flex justify-center items-center p-1 h-auto">
+            <img src={navbarIcon} alt="navbar_icon" />
+            </div>
       </div>
     </div>
   );
