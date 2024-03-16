@@ -14,7 +14,7 @@ const Recipe = ({ recipe, handleAddToCookBookmarks  }) => {
   } = recipe;
   return (
     <div>
-      <div className="p-6 rounded-2xl md:min-h-[800px] flex flex-col gap-6 border-2">
+      <div className="p-2 md:p-6 rounded-2xl md:min-h-[800px] flex flex-col gap-6 border-2">
         <figure>
           <img
             src={recipe_img}
@@ -35,9 +35,9 @@ const Recipe = ({ recipe, handleAddToCookBookmarks  }) => {
             </div>
           </div>
             <hr />
-            <div className="flex gap-4 my-6">
-                <div className="flex items-center gap-1 text-base text-[#282828CC] font-normal"><span><IoMdTime /></span> <span>{preparing_time}</span> <span>minutes</span></div>
-                <div className="flex items-center gap-1 text-base text-[#282828CC] font-normal" > <span><AiOutlineFire /></span> <span>{calories}</span>  <span>calories</span></div>
+            <div className="flex gap-2 md:gap-4 my-6">
+                <div className="flex items-center gap-1 md:text-base text-[#282828CC] font-normal"><span><IoMdTime /></span> <span>{preparing_time}</span> <span>minutes</span></div>
+                <div className="flex items-center gap-1 md:text-base text-[#282828CC] font-normal" > <span><AiOutlineFire /></span> <span>{calories}</span>  <span>calories</span></div>
             </div>
           <div className="flex-1 flex items-end">
             <button onClick={() =>  handleAddToCookBookmarks(recipe)} className="btn rounded-[50px] bg-[#0BE58A] text-[#150B2B] text-lg font-medium">Want to Cook</button>

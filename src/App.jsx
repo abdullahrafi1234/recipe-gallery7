@@ -6,7 +6,7 @@ import Main from "./components/Main/Main";
 function App() {
 
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto p-4 md:p-0'>
       
       <Header></Header>
       <Main></Main>
