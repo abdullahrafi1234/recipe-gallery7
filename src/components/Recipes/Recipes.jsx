@@ -45,6 +45,9 @@ const Recipes = () => {
     const newTimes = (parseInt(times) + parseInt(cookBookmark.preparing_time));
     setTimes(newTimes);
 
+    const newCalories = (parseInt(calories) + parseInt(cookBookmark.calories));
+    setCalories(newCalories);
+
   };
   return (
     <div className="flex flex-col md:flex-row gap-6">
@@ -72,7 +75,7 @@ const Recipes = () => {
             </h2>
             <h2>
               Total Calories =
-              <br /> 1050 calories
+              <br /> {calories} calories
             </h2>
           </div>
         </div>
