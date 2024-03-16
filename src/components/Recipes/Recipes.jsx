@@ -3,6 +3,9 @@ import { useState } from "react";
 import Recipe from "../Recipe/Recipe";
 import CookBookmarks from "../CookBookmarks/CookBookmarks";
 
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
 
@@ -27,8 +30,9 @@ const Recipes = () => {
     if (!isExist) {
       const newCookBookmarks = [...cookBookmarks, recipe];
       setCookBookmarks(newCookBookmarks);
+      toast.success("Added Successful Want to Cook Bookmarks");
     } else {
-      alert("nasim");
+      toast("Already exist");
     }
   };
 
@@ -48,6 +52,7 @@ const Recipes = () => {
     const newCalories = (parseInt(calories) + parseInt(cookBookmark.calories));
     setCalories(newCalories);
 
+    toast.warn("Added Successful For Cooking ");
   };
   return (
     <div className="flex flex-col md:flex-row gap-6">
@@ -80,6 +85,7 @@ const Recipes = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
