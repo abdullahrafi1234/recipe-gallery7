@@ -14,8 +14,13 @@ const Recipes = () => {
   const [cookBookmarks, setCookBookmarks] = useState([]);
 
   const handleAddToCookBookmarks = (recipe) => {
-    const newCookBookmarks = [...cookBookmarks, recipe];
-    setCookBookmarks(newCookBookmarks);
+    const isExist = cookBookmarks.find((item) => item.id == recipe.id);
+    if (!isExist) {
+      const newCookBookmarks = [...cookBookmarks, recipe];
+      setCookBookmarks(newCookBookmarks);
+    } else {
+      alert();
+    }
   };
 
   return (
