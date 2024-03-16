@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Ingredients from "../Ingredient/Ingredients";
 import { IoMdTime } from "react-icons/io";
 import { AiOutlineFire } from "react-icons/ai";
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleAddToCookBookmarks  }) => {
   // console.log(recipe);
   const {
     recipe_id,
@@ -41,7 +41,7 @@ const Recipe = ({ recipe }) => {
                 <p className="flex items-center gap-1 text-base text-[#282828CC] font-normal" > <AiOutlineFire /> {calories}  calories</p>
             </div>
           <div className="flex-1 flex items-end">
-            <button className="btn rounded-[50px] bg-[#0BE58A] text-[#150B2B] text-lg font-medium">Want to Cook</button>
+            <button onClick={() =>  handleAddToCookBookmarks(recipe)} className="btn rounded-[50px] bg-[#0BE58A] text-[#150B2B] text-lg font-medium">Want to Cook</button>
           </div>
         </div>
       </div>
@@ -51,6 +51,7 @@ const Recipe = ({ recipe }) => {
 
 Recipe.propTypes = {
   recipe: PropTypes.object,
+  handleAddToCookBookmarks: PropTypes.func
 };
 
 export default Recipe;
