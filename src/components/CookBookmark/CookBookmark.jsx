@@ -13,7 +13,7 @@ const CookBookmark = ({ cookBookmark, index, handlePreparingButton }) => {
         
         <td className="pt-2 pr-1 pb-4">
           <button onClick={() => handlePreparingButton(cookBookmark)} className="btn  rounded-[50px] bg-[#0BE58A] text-[#150B2B] text-base font-medium">
-            Prepare
+            Preparing
           </button>
         </td>
       </tr>

@@ -12,9 +12,7 @@ const Banner = () => {
           class tailored for you!
         </h1>
         <p className="text-lg font-normal text-[#FFFFFF]">
-          Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
-          Database and solve 500+ coding <br /> problems to become an
-          exceptionally well world-class Programmer.
+        Embark on a culinary journey with our bespoke cooking classes, designed to elevate  <br />your skills and cater to your unique tastes and preferences.
         </p>
       </div>
       <div className="pt-10 px-2  pb-8 md:pb-32 flex gap-3 flex-col md:flex-row justify-center">
