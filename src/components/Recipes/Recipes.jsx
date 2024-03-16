@@ -5,13 +5,20 @@ import CookBookmarks from "../CookBookmarks/CookBookmarks";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
+
+  const [cookBookmarks, setCookBookmarks] = useState([]);
+  
+  const [currentlyCookBookmarks, setCurrentlyCookBookmarks] = useState([]);
+
+  const [times, setTimes] = useState(0);
+
+  const [calories, setCalories] = useState(0);
+
   useEffect(() => {
     fetch("./recipes.json")
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);
-
-  const [cookBookmarks, setCookBookmarks] = useState([]);
 
   const handleAddToCookBookmarks = (recipe) => {
     const isExist = cookBookmarks.find(
@@ -24,14 +31,19 @@ const Recipes = () => {
       alert("nasim");
     }
   };
-  const [currentlyCookBookmarks, setCurrentlyCookBookmars] = useState([]);
+
+
   const handlePreparingButton = (cookBookmark) => {
     const remainingItem = cookBookmarks.filter(
       (item) => item.recipe_id !== cookBookmark.recipe_id
     );
+
     setCookBookmarks(remainingItem);
-    const    newCurrentlyCookBookmarks = [...currentlyCookBookmarks, cookBookmark];
-    setCurrentlyCookBookmars(newCurrentlyCookBookmarks);
+    const newCurrentlyCookBookmarks = [...currentlyCookBookmarks, cookBookmark];
+    setCurrentlyCookBookmarks(newCurrentlyCookBookmarks);
+
+    const newTimes = (parseInt(times) + parseInt(cookBookmark.preparing_time));
+    setTimes(newTimes);
 
   };
   return (
@@ -46,11 +58,24 @@ const Recipes = () => {
         ))}
       </div>
       <div className="md:w-[40%]">
-        <CookBookmarks
-          cookBookmarks={cookBookmarks}
-          handlePreparingButton={handlePreparingButton}
-          currentlyCookBookmarks = {currentlyCookBookmarks}
-        ></CookBookmarks>
+        <div className="w-full border-2 rounded-2xl md:min-h-[800px] py-4 px-0.5">
+          <CookBookmarks
+            cookBookmarks={cookBookmarks}
+            handlePreparingButton={handlePreparingButton}
+            currentlyCookBookmarks={currentlyCookBookmarks}
+          ></CookBookmarks>
+          <div className="flex justify-end mt-12 gap-6 mr-5">
+            <h2>
+              Total Time =
+              <br />
+              {times} minutes
+            </h2>
+            <h2>
+              Total Calories =
+              <br /> 1050 calories
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
   );

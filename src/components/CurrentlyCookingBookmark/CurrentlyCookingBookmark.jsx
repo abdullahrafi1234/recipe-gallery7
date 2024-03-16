@@ -6,7 +6,7 @@ const CurrentlyCookingBookmark = ({item, index}) => {
                     <th className="pt-2 pb-4 pl-4 text-base font-semibold">
                       {index}
                     </th>
-                    <td className="pt-2 pb-4 pr-4 text-[#282828b3] text-base">
+                    <td className="pt-2 pb-4 text-[#282828b3] text-base">
                       {recipe_name}
                     </td>
                     <td className="pt-2 pb-4 text-[#282828b3] text-base">

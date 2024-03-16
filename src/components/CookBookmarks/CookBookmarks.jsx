@@ -7,7 +7,7 @@ const CookBookmarks = ({
   currentlyCookBookmarks,
 }) => {
   return (
-    <div className=" border-2 rounded-2xl md:min-h-[800px] p-6">
+    <div>
       {/* want to cook part */}
       <div>
         <div className="w-[60%] mx-auto text-center">
@@ -17,17 +17,18 @@ const CookBookmarks = ({
           <hr />
         </div>
         <div className="mt-6">
-          <table className="mx-auto">
-            <thead className="">
+          <div className="overflow-x-auto md:overflow-visible">
+          <table className="mx-auto table">
+            <thead>
               <tr>
-                <th className="pr-8 pb-4"> </th>
-                <th className="pr-8 pb-4">Name</th>
-                <th className="pr-8 pb-4">Time</th>
-                <th className="pr-8 pb-4">Calories</th>
-                <th className="pr-8 pb-4"> </th>
+              <th className=" pb-4"> </th>
+                <th className=" pb-4">Name</th>
+                <th className=" pb-4">Time</th>
+                <th className="pb-4">Calories</th>
+                <th className=" pb-4"> </th>
               </tr>
             </thead>
-            <tbody className="bg-[#28282808] p-5">
+            <tbody className="bg-[#28282808] p-5 overflow-x-auto">
               {cookBookmarks.map((cookBookmark, idx) => (
                 <CookBookmark
                   key={idx}
@@ -38,6 +39,7 @@ const CookBookmarks = ({
               ))}
             </tbody>
           </table>
+          </div>
         </div>
       </div>
       {/* Currently Cooking part */}
@@ -49,19 +51,23 @@ const CookBookmarks = ({
           <hr />
         </div>
         <div className="mt-6">
-          <table className="mx-auto">
-            <thead className="">
-              <tr>
-                <th className="pr-8 pb-4"> </th>
-                <th className="pr-8 pb-4">Name</th>
-                <th className="pr-8 pb-4">Time</th>
-                <th className="pr-8 pb-4">Calories</th>
-              </tr>
-            </thead>
-            <tbody className="bg-[#28282808] p-5">
+          
+          <div className="overflow-x-auto">
+            <table className="table">
+              {/* head */}
+              <thead>
+                <tr>
+                <th className=" pb-4"> </th>
+                <th className=" pb-4">Name</th>
+                <th className=" pb-4">Time</th>
+                <th className="pb-4">Calories</th>
+                </tr>
+              </thead>
+              <tbody>
               {currentlyCookBookmarks.map((item, index) => <CurrentlyCookingBookmark key={index} index={index+1} item = {item}> </CurrentlyCookingBookmark>)}
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
