@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import CookBookmark from "../CookBookmark/CookBookmark";
 const CookBookmarks = ({cookBookmarks}) => {
   return (
     <div>
@@ -12,16 +13,16 @@ const CookBookmarks = ({cookBookmarks}) => {
         <table className="mx-auto">
           <thead>
             <tr >
-                <th className="pr-4">  </th>
-              <th className="pr-4">Name</th>
-              <th className="pr-4">Time</th>
-              <th className="pr-4">Calories</th>
-              <th className="pr-4"></th>
+                <th className="pr-8">  </th>
+              <th className="pr-8">Name</th>
+              <th className="pr-8">Time</th>
+              <th className="pr-8">Calories</th>
+              <th className="pr-8"></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="bg-[#28282808] rounde">
                 {
-                    cookBookmarks.map((cookBookmark, idx) => )
+                    cookBookmarks.map((cookBookmark, idx) => <CookBookmark key={idx} cookBookmark={cookBookmark} idx={idx+1}></CookBookmark> )
                 }
           </tbody>
         </table>
