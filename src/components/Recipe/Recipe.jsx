@@ -36,8 +36,8 @@ const Recipe = ({ recipe, handleAddToCookBookmarks  }) => {
           </div>
             <hr />
             <div className="flex gap-4 my-6">
-                <p className="flex items-center gap-1 text-base text-[#282828CC] font-normal"><IoMdTime /> {preparing_time} minutes</p>
-                <p className="flex items-center gap-1 text-base text-[#282828CC] font-normal" > <AiOutlineFire /> {calories}  calories</p>
+                <div className="flex items-center gap-1 text-base text-[#282828CC] font-normal"><span><IoMdTime /></span> <span>{preparing_time}</span> <span>minutes</span></div>
+                <div className="flex items-center gap-1 text-base text-[#282828CC] font-normal" > <span><AiOutlineFire /></span> <span>{calories}</span>  <span>calories</span></div>
             </div>
           <div className="flex-1 flex items-end">
             <button onClick={() =>  handleAddToCookBookmarks(recipe)} className="btn rounded-[50px] bg-[#0BE58A] text-[#150B2B] text-lg font-medium">Want to Cook</button>
