@@ -1,105 +1,138 @@
-{
-    "recipes": [
-      {
-        "recipe_id": 1,
-        "recipe_name": "Spaghetti Carbonara",
-        "recipe_image": "spaghetti_carbonara.jpg",
-        "short_description": "Classic Italian pasta dish with creamy sauce and crispy bacon",
-        "ingredients": [
-          "300 g spaghetti",
-          "150 g pancetta or bacon",
-          "3 large eggs",
-          "50 g grated Parmesan cheese",
-          "2 cloves garlic, minced",
-          "Salt and black pepper to taste"
-        ],
-        "preparing_time": "20 min",
-        "calories": "450 calories"
-      },
-      {
-        "recipe_id": 2,
-        "recipe_name": "Vegetable Stir-Fry",
-        "recipe_image": "vegetable_stir_fry.jpg",
-        "short_description": "Healthy and colorful mix of stir-fried vegetables",
-        "ingredients": [
-          "200 g broccoli florets",
-          "150 g sliced carrots",
-          "100 g sliced bell peppers",
-          "100 g snap peas",
-          "120 ml soy sauce",
-          "2 cloves garlic, minced",
-          "1 tablespoon sesame oil"
-        ],
-        "preparing_time": "25 min",
-        "calories": "280 calories"
-      },
-      {
-        "recipe_id": 3,
-        "recipe_name": "Chicken Caesar Salad",
-        "recipe_image": "chicken_caesar_salad.jpg",
-        "short_description": "Classic salad with grilled chicken, crisp lettuce, and Caesar dressing",
-        "ingredients": [
-          "250 g grilled chicken breast, sliced",
-          "150 g romaine lettuce",
-          "50 g croutons",
-          "30 g grated Parmesan cheese",
-          "4 tablespoons Caesar dressing",
-          "1 lemon, juiced"
-        ],
-        "preparing_time": "15 min",
-        "calories": "320 calories"
-      },
-      {
-        "recipe_id": 4,
-        "recipe_name": "Mushroom Risotto",
-        "recipe_image": "mushroom_risotto.jpg",
-        "short_description": "Creamy Italian rice dish with sautéed mushrooms",
-        "ingredients": [
-          "300 g Arborio rice",
-          "400 g mushrooms, sliced",
-          "1 onion, finely chopped",
-          "2 cloves garlic, minced",
-          "1 liter vegetable broth",
-          "100 ml dry white wine",
-          "50 g grated Parmesan cheese"
-        ],
-        "preparing_time": "35 min",
-        "calories": "380 calories"
-      },
-      {
-        "recipe_id": 5,
-        "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
-        "recipe_image": "grilled_salmon.jpg",
-        "short_description": "Flavorful grilled salmon fillets served with zesty lemon herb sauce",
-        "ingredients": [
-          "4 salmon fillets",
-          "2 lemons, thinly sliced",
-          "2 tablespoons chopped fresh parsley",
-          "2 tablespoons chopped fresh dill",
-          "4 cloves garlic, minced",
-          "60 ml olive oil",
-          "Salt and black pepper to taste"
-        ],
-        "preparing_time": "30 min",
-        "calories": "320 calories"
-      },
-      {
-        "recipe_id": 6,
-        "recipe_name": "Homemade Margherita Pizza",
-        "recipe_image": "margherita_pizza.jpg",
-        "short_description": "Classic Italian pizza topped with fresh tomatoes, mozzarella, and basil",
-        "ingredients": [
-          "300 g pizza dough",
-          "200 g fresh mozzarella cheese, sliced",
-          "2 ripe tomatoes, sliced",
-          "20 fresh basil leaves",
-          "60 ml tomato sauce",
-          "2 cloves garlic, minced",
-          "1 tablespoon olive oil"
-        ],
-        "preparing_time": "40 min",
-        "calories": "400 calories"
-      }
-    ]
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Chicken Alfredo Pasta",
+    "recipe_img": "https://img.freepik.com/free-photo/fettuccine-with-chicken-cream-sauce-mint-side-view_141793-3106.jpg?w=1380&t=st=1710586343~exp=1710586943~hmac=87e0a794e9d30b9f4f0f3a30f49353fbb0a1220d504b3d0efd952740a83d9d01",
+    "short_description": "Creamy pasta dish with tender chicken and rich Alfredo sauce",
+    "ingredients": [
+      "300 g fettuccine pasta",
+      "250 g chicken breast, sliced",
+      "200 ml heavy cream",
+      "50 g grated Parmesan cheese",
+      "2 cloves garlic, minced",
+      "2 tablespoons butter",
+      "Salt and black pepper to taste"
+    ],
+    "preparing_time": "25",
+    "calories": "480"
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Beef Tacos",
+    "recipe_img": "https://img.freepik.com/free-photo/fresh-beef-taco-wooden-table-with-sauce-generative-ai_188544-8042.jpg?t=st=1710586514~exp=1710590114~hmac=8e63847a50592a3f5244eba3e96be2fab19be76a4333143220b36ab1c095fd5f&w=1380",
+    "short_description": "Mexican-inspired tacos with seasoned beef and fresh toppings",
+    "ingredients": [
+      "300 g ground beef",
+      "8 small taco shells",
+      "1 onion, diced",
+      "1 bell pepper, diced",
+      "100 g shredded lettuce",
+      "100 g shredded cheddar cheese",
+      "Salsa and sour cream for serving"
+    ],
+    "preparing_time": "20",
+    "calories": "350"
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Vegetable Curry",
+    "recipe_img": "https://img.freepik.com/free-photo/pot-chili-mexican-snacks_23-2148181600.jpg?t=st=1710586607~exp=1710590207~hmac=60eb5fbdae2e61473a355328d37e5f913914ea3226ef7548e2fbb270c1e48139&w=1380",
+    "short_description": "Spicy and flavorful curry with assorted vegetables",
+    "ingredients": [
+      "300 g mixed vegetables (such as carrots, potatoes, cauliflower)",
+      "200 ml coconut milk",
+      "100 g diced tomatoes",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "2 tablespoons curry powder",
+      "1 tablespoon vegetable oil"
+    ],
+    "preparing_time": "30",
+    "calories": "290"
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Caprese Salad",
+    "recipe_img": "https://img.freepik.com/free-photo/salad-caprese-table_140725-9968.jpg?t=st=1710586673~exp=1710590273~hmac=b9cd9034169eacd0d6a0ab06eddea7a3ffcdf844c1844aa9d2305f6bf55cb5c3&w=996",
+    "short_description": "Simple and refreshing salad with ripe tomatoes, fresh mozzarella, and basil",
+    "ingredients": [
+      "3 ripe tomatoes, sliced",
+      "200 g fresh mozzarella cheese, sliced",
+      "20 fresh basil leaves",
+      "2 tablespoons balsamic vinegar",
+      "2 tablespoons olive oil",
+      "Salt and black pepper to taste"
+    ],
+    "preparing_time": "15",
+    "calories": "250"
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Shrimp Scampi",
+    "recipe_img": "https://img.freepik.com/free-photo/clay-plate-delicious-shrimps-with-sliced-lemon-onion-stone-surface_114579-57069.jpg?t=st=1710586743~exp=1710590343~hmac=7957c46868ce109b4303b8f6751df8073f64a6409e510a9eaadbf71d3c479ed2&w=1380",
+    "short_description": "Garlicky shrimp sautéed in butter and white wine, served over pasta",
+    "ingredients": [
+      "300 g linguine pasta",
+      "250 g large shrimp, peeled and deveined",
+      "4 cloves garlic, minced",
+      "50 ml white wine",
+      "50 g butter",
+      "2 tablespoons chopped parsley",
+      "Salt and black pepper to taste"
+    ],
+    "preparing_time": "20",
+    "calories": "380"
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Classic Beef Burger",
+    "recipe_img": "https://img.freepik.com/free-photo/top-view-tasty-sandwich-tomatoes-ketchup-wooden-cutting-board-right-side-dark-color-surface_179666-34205.jpg?t=st=1710586853~exp=1710590453~hmac=6090566098945a2fa5d6f8ef478414a4581b5a9c3c8063d33b572e43f0c3f6dc&w=1380",
+    "short_description": "Juicy beef patties served on toasted buns with fresh toppings",
+    "ingredients": [
+      "400 g ground beef",
+      "4 burger buns",
+      "4 slices cheddar cheese",
+      "1 onion, sliced",
+      "4 lettuce leaves",
+      "4 tomato slices",
+      "Ketchup and mustard for serving"
+    ],
+    "preparing_time": "25",
+    "calories": "450"
+  },
+  {
+    "recipe_id": 7,
+    "recipe_name": "Pumpkin Soup",
+    "recipe_img": "https://img.freepik.com/free-photo/autumn-food-soup-pumpkin-leaves_23-2148656290.jpg?t=st=1710586907~exp=1710590507~hmac=179d445ce52fea7fd988128d40e99bee7bfd171623a699ef36e86791ee0f6d33&w=1380",
+    "short_description": "Smooth and creamy soup made with roasted pumpkin and warming spices",
+    "ingredients": [
+      "500 g pumpkin, peeled and diced",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "500 ml vegetable broth",
+      "100 ml coconut milk",
+      "1 teaspoon ground cumin",
+      "1 teaspoon ground ginger",
+      "Salt and black pepper to taste"
+    ],
+    "preparing_time": "35",
+    "calories": "220"
+  },
+  {
+    "recipe_id": 8,
+    "recipe_name": "Chocolate Chip Cookies",
+    "recipe_img": "https://img.freepik.com/free-photo/top-view-cookies-chocolate-chips-cloth_23-2148654545.jpg?t=st=1710586947~exp=1710590547~hmac=854d04c334ebc2deebfcd0fe5ed90308848143235291860be361a9fc653f5bba&w=1380",
+    "short_description": "Soft and chewy cookies loaded with chocolate chips",
+    "ingredients": [
+      "200 g all-purpose flour",
+      "150 g unsalted butter, softened",
+      "100 g brown sugar",
+      "100 g granulated sugar",
+      "1 egg",
+      "1 teaspoon vanilla extract",
+      "150 g chocolate chips"
+    ],
+    "preparing_time": "15",
+    "calories": "150"
   }
-  
+]
