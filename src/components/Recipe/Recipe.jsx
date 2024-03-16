@@ -5,7 +5,6 @@ import { AiOutlineFire } from "react-icons/ai";
 const Recipe = ({ recipe, handleAddToCookBookmarks  }) => {
   // console.log(recipe);
   const {
-    recipe_id,
     recipe_name,
     recipe_img,
     short_description,
@@ -15,7 +14,7 @@ const Recipe = ({ recipe, handleAddToCookBookmarks  }) => {
   } = recipe;
   return (
     <div>
-      <div className="p-6 rounded-2xl min-h-[1300px] flex flex-col gap-6 border-2">
+      <div className="p-6 rounded-2xl md:min-h-[800px] flex flex-col gap-6 border-2">
         <figure>
           <img
             src={recipe_img}
