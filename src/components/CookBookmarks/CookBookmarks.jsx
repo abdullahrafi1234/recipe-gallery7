@@ -22,10 +22,10 @@ const CookBookmarks = ({
             <thead>
               <tr>
               <th className=" pb-4"> </th>
-                <th className=" pb-4">Name</th>
-                <th className=" pb-4">Time</th>
-                <th className="pb-4">Calories</th>
-                <th className=" pb-4"> </th>
+                <th className=" pb-4 text-sm">Name</th>
+                <th className=" pb-4 text-sm">Time</th>
+                <th className="pb-4 text-sm">Calories</th>
+                <th className=" pb-4 text-sm"> </th>
               </tr>
             </thead>
             <tbody className="bg-[#28282808] p-5 overflow-x-auto">
@@ -58,9 +58,9 @@ const CookBookmarks = ({
               <thead>
                 <tr>
                 <th className=" pb-4"> </th>
-                <th className=" pb-4">Name</th>
-                <th className=" pb-4">Time</th>
-                <th className="pb-4">Calories</th>
+                <th className=" pb-4 text-sm">Name</th>
+                <th className=" pb-4 text-sm">Time</th>
+                <th className="pb-4 text-sm">Calories</th>
                 </tr>
               </thead>
               <tbody>

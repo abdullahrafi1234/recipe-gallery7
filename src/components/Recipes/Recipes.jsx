@@ -56,7 +56,7 @@ const Recipes = () => {
   };
   return (
     <div className="flex flex-col md:flex-row gap-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:w-[60%] items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-[60%] items-center">
         {recipes.map((recipe, idx) => (
           <Recipe
             key={idx}
@@ -65,7 +65,7 @@ const Recipes = () => {
           ></Recipe>
         ))}
       </div>
-      <div className="md:w-[40%]">
+      <div className="lg:w-[40%]">
         <div className="w-full border-2 rounded-2xl md:min-h-[800px] py-4 px-0.5">
           <CookBookmarks
             cookBookmarks={cookBookmarks}
