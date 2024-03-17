@@ -32,7 +32,7 @@ const Recipes = () => {
       setCookBookmarks(newCookBookmarks);
       toast.success("Added Successful Want to Cook Bookmarks");
     } else {
-      toast("Already exist");
+      toast.warn("Already exist");
     }
   };
 
@@ -52,7 +52,7 @@ const Recipes = () => {
     const newCalories = (parseInt(calories) + parseInt(cookBookmark.calories));
     setCalories(newCalories);
 
-    toast.warn("Added Successful For Cooking ");
+    toast("Added Successful For Cooking ");
   };
   return (
     <div className="flex flex-col md:flex-row gap-6">
