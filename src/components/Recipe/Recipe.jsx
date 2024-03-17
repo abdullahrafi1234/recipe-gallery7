@@ -14,7 +14,7 @@ const Recipe = ({ recipe, handleAddToCookBookmarks  }) => {
   } = recipe;
   return (
     <div>
-      <div className="p-6 md:p-2 rounded-2xl md:min-h-[800px] flex flex-col gap-6 border-2">
+      <div className="p-6 md:p-2 rounded-2xl md:min-h-[850px] flex flex-col gap-6 border-2">
         <figure>
           <img
             src={recipe_img}

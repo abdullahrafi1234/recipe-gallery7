@@ -17,7 +17,7 @@ const CookBookmarks = ({
           <hr />
         </div>
         <div className="mt-6">
-          <div className="overflow-x-auto md:overflow-visible">
+          <div className="overflow-x-auto">
           <table className="mx-auto table">
             <thead>
               <tr>

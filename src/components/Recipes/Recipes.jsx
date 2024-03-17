@@ -55,8 +55,8 @@ const Recipes = () => {
     toast("Added Successful For Cooking List! ");
   };
   return (
-    <div className="flex flex-col md:flex-row gap-6">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-[60%] items-center">
+    <div className="flex flex-col md:flex-row gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:w-[58%] items-center">
         {recipes.map((recipe, idx) => (
           <Recipe
             key={idx}
@@ -65,8 +65,8 @@ const Recipes = () => {
           ></Recipe>
         ))}
       </div>
-      <div className="lg:w-[40%]">
-        <div className="w-full border-2 rounded-2xl md:min-h-[800px] py-4 px-0.5">
+      <div className="lg:flex-1">
+        <div className="w-full border-2 rounded-2xl md:min-h-[850px] py-4 px-0.5">
           <CookBookmarks
             cookBookmarks={cookBookmarks}
             handlePreparingButton={handlePreparingButton}
