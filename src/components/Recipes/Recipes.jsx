@@ -73,12 +73,12 @@ const Recipes = () => {
             currentlyCookBookmarks={currentlyCookBookmarks}
           ></CookBookmarks>
           <div className="flex justify-end mt-12 gap-6 mr-5">
-            <h2>
+            <h2 className="text-base font-medium text-[#282828CC]">
               Total Time =
               <br />
               {times} minutes
             </h2>
-            <h2>
+            <h2 className="text-base font-medium text-[#282828CC]">
               Total Calories =
               <br /> {calories} calories
             </h2>
